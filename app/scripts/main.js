@@ -19,3 +19,4 @@ setTimeout( () => {
 setTimeout( () => {
   setTimeout(addAnimation('.container-five'))
 }, 5000)
+console.log("done");
