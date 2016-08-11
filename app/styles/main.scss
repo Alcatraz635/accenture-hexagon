@@ -1,0 +1,124 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+.outer-container {
+    width: 100%;
+    height: 800px;
+}
+.container {
+    position: absolute;
+    width: 24%;
+    height: 24%;
+
+}
+.container img{
+  width: 75%;
+}
+.container-one {
+    left: 28%;
+}
+.container-two {
+    right: 27%;
+    top: 0%;
+}
+.row-one {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+.row-two img{
+  position: absolute;
+  top: 18%;
+}
+.container img {
+    width: 100%;
+    height: 100%;
+}
+.row-two {
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    height: 100%;
+}
+.container-three {
+
+    left: 18%;
+}
+.container-four {
+
+    left: 39%;
+}
+.container-five {
+
+    left: 60%;
+}
+.hexagon{
+  position: absolute;
+}
+.reverse-hexagon{
+  position: absolute;
+  opacity:0;
+}
+
+.hexagon-animation {
+
+  -webkit-animation: spin 2s   forwards;
+  animation:  spin 2s   forwards;
+}
+.reverse-hexagon-animation{
+    -webkit-animation: reverse-spin 2s   forwards;
+    animation:  reverse-spin 2s   forwards;
+
+}
+.hexagon-text{
+  color: purple;
+  color: purple;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+@-webkit-keyframes spin {
+    0%   {
+      opacity:1;
+      transform: rotate(0deg);
+    }
+    100% {
+      opacity:0;
+      transform: rotate(360deg);
+    }
+}
+/* Standard syntax */
+@keyframes spin {
+  0%   {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity:0;
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes reverse-spin {
+    0%   {
+      opacity:0;
+      transform: rotate(360deg);
+    }
+    100% {
+      opacity:1;
+      transform: rotate(0deg);
+    }
+}
+/* Standard syntax */
+@keyframes reverse-spin {
+  0%   {
+    opacity:0;
+    transform: rotate(360deg);
+  }
+  100% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+}
